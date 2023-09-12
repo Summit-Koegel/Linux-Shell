@@ -1,0 +1,328 @@
+starting build
+
+**********************************************************************
+
+Test build
+compile smash.c
+
+**********************************************************************
+gcc smash.c -o smash
+
+
+test build PASSED (1 of 1)
+ (compile smash.c)
+
+starting badcd
+
+**********************************************************************
+
+Test badcd
+cd to a bad directory
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test badcd PASSED (0.25 of 0.25)
+ (cd to a bad directory)
+
+starting exec
+
+**********************************************************************
+
+Test exec
+path should be /bin
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test exec PASSED (0.25 of 0.25)
+ (path should be /bin)
+
+starting badexec
+
+**********************************************************************
+
+Test badexec
+run programs that do not exist in /bin
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test badexec PASSED (0.25 of 0.25)
+ (run programs that do not exist in /bin)
+
+starting pwd
+
+**********************************************************************
+
+Test pwd
+pwd
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test pwd PASSED (0.25 of 0.25)
+ (pwd)
+
+starting line
+
+**********************************************************************
+
+Test line
+line with maximum allowed length
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test line PASSED (0.5 of 0.5)
+ (line with maximum allowed length)
+
+starting whitespace
+
+**********************************************************************
+
+Test whitespace
+leading and trailing whitespace, full whitespaces or empty string
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test whitespace PASSED (0.5 of 0.5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+starting rdr
+
+**********************************************************************
+
+Test rdr
+simple redirection with no standard error
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test rdr PASSED (0.5 of 0.5)
+ (simple redirection with no standard error)
+
+starting pipe
+
+**********************************************************************
+
+Test pipe
+simple pipe
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test pipe PASSED (1.0 of 1.0)
+ (simple pipe)
+
+starting pipeloop
+
+**********************************************************************
+
+Test pipeloop
+simple loop with pipe
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+testing.test.Failure: ./smash gave incorrect standard output.
+Expected: "smash> hola hello\nhola hello\nhola hello\nsmash>"
+Got:      "smash> hola hello\nhola hello\nsmash> hola hello"
+
+
+test pipeloop FAILED (0 of 1.5)
+ (simple loop with pipe)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </home/cs537-1/tests/P3/pipeloop/in
+ and check out the test folder
+ /home/cs537-1/tests/P3/pipeloop
+ to compare your output with reference outputs. 
+
+starting mul
+
+**********************************************************************
+
+Test mul
+running multiple commands at once
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test mul PASSED (1.0 of 1.0)
+ (running multiple commands at once)
+
+starting loop
+
+**********************************************************************
+
+Test loop
+simple loop
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test loop PASSED (1.0 of 1.0)
+ (simple loop)
+
+starting emptymul
+
+**********************************************************************
+
+Test emptymul
+empty mul commands
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test emptymul PASSED (0.5 of 0.5)
+ (empty mul commands)
+
+starting mulrd
+
+**********************************************************************
+
+Test mulrd
+redirection with multiple command
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test mulrd PASSED (1.5 of 1.5)
+ (redirection with multiple command)
+
+starting looprd
+
+**********************************************************************
+
+Test looprd
+simple redirection with loop
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test looprd PASSED (1.5 of 1.5)
+ (simple redirection with loop)
+
+starting loopmul
+
+**********************************************************************
+
+Test loopmul
+loop with multiple commands
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test loopmul PASSED (1.5 of 1.5)
+ (loop with multiple commands)
+
+starting piperd
+
+**********************************************************************
+
+Test piperd
+redirection with pipe
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test piperd PASSED (1.5 of 1.5)
+ (redirection with pipe)
+
+starting pipechainmul
+
+**********************************************************************
+
+Test pipechainmul
+chain pipe with semicolon
+
+**********************************************************************
+/tmp/tmp4dfyo89k/p/./smash
+
+
+test pipechainmul PASSED (1.5 of 1.5)
+ (chain pipe with semicolon)
+
+**********************************************************************
+Summary:
+test build PASSED (1 of 1)
+ (compile smash.c)
+
+test badcd PASSED (0.25 of 0.25)
+ (cd to a bad directory)
+
+test exec PASSED (0.25 of 0.25)
+ (path should be /bin)
+
+test badexec PASSED (0.25 of 0.25)
+ (run programs that do not exist in /bin)
+
+test pwd PASSED (0.25 of 0.25)
+ (pwd)
+
+test line PASSED (0.5 of 0.5)
+ (line with maximum allowed length)
+
+test whitespace PASSED (0.5 of 0.5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+test rdr PASSED (0.5 of 0.5)
+ (simple redirection with no standard error)
+
+test pipe PASSED (1.0 of 1.0)
+ (simple pipe)
+
+test pipeloop FAILED (0 of 1.5)
+ (simple loop with pipe)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </home/cs537-1/tests/P3/pipeloop/in
+ and check out the test folder
+ /home/cs537-1/tests/P3/pipeloop
+ to compare your output with reference outputs. 
+
+test mul PASSED (1.0 of 1.0)
+ (running multiple commands at once)
+
+test loop PASSED (1.0 of 1.0)
+ (simple loop)
+
+test emptymul PASSED (0.5 of 0.5)
+ (empty mul commands)
+
+test mulrd PASSED (1.5 of 1.5)
+ (redirection with multiple command)
+
+test looprd PASSED (1.5 of 1.5)
+ (simple redirection with loop)
+
+test loopmul PASSED (1.5 of 1.5)
+ (loop with multiple commands)
+
+test piperd PASSED (1.5 of 1.5)
+ (redirection with pipe)
+
+test pipechainmul PASSED (1.5 of 1.5)
+ (chain pipe with semicolon)
+
+Passed 17 of 18 tests.
+Overall 17 of 18
+Points 14.5 of 16.0

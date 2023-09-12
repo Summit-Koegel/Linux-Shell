@@ -1,0 +1,14 @@
+abc.txt
+a.out
+cdTest
+outputfile
+outputFileasdfasdf
+output.txt
+README.md
+runtests.log
+smash
+smash.c
+test1.txt
+test2.txt
+test3.txt
+test4.txt

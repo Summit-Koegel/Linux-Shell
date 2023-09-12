@@ -1,0 +1,10 @@
+abc.txt
+a.out
+cdTest
+outputfile
+runtests.log
+smash
+smash.c
+test1.txt
+test2.txt
+test3.txt
